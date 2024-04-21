@@ -1,10 +1,10 @@
 namespace NumbersInWords.Tests;
 
-public class UnitTest1
+public class NumbersInWordsTest
 {
     [Fact]
-    public void Test1()
+    public void EverythingShouldWork()
     {
-
+        Assert.Equal(true, true);
     }
 }
