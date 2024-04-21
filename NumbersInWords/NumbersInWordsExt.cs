@@ -2,13 +2,18 @@
 
 public static class NumberInWordsExt
 {
+    private static Dictionary<long, string> numbers = new Dictionary<long, string>()
+    {
+        {1, "one"},
+        {2, "two"},
+        {3, "three"},
+    };
+
     public static string ToWord(this long n)
     {
-        if(n == 3)
-            return "three";
-        else if(n == 2)
-            return "two";
+        if(numbers.ContainsKey(n))
+            return numbers[n];
         else
-            return "one";
+            return "unknown number";
     }
 }
