@@ -2,24 +2,13 @@ namespace NumbersInWords.Tests;
 
 public class NumbersInWordsTest
 {
-    [Fact]
-    public void ShouldReturnNumberOneInWord()
-    {
-        long number = 1;
-        Assert.Equal("one", number.ToWord());
-    }
+    [Theory]
+    [InlineData(1, "one")]
+    [InlineData(2, "two")]
+    [InlineData(3, "three")]
 
-    [Fact]
-    public void ShouldReturnNumberTwoInWord()
+    public void ShouldReturnNumberInWord(long number, string expected)
     {
-        long number = 2;
-        Assert.Equal("two", number.ToWord());
-    }
-
-    [Fact]
-    public void ShouldReturnNumberThreeInWord()
-    {
-        long number = 3;
-        Assert.Equal("three", number.ToWord());
+        Assert.Equal(expected, number.ToWord());
     }
 }
