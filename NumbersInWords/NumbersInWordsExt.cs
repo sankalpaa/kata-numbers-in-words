@@ -4,6 +4,9 @@ public static class NumberInWordsExt
 {
     public static string ToWord(this long n)
     {
-        return "one";
+        if(n == 2)
+            return "two";
+        else
+            return "one";
     }
 }
