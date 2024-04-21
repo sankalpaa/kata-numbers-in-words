@@ -1,4 +1,4 @@
-#Numbers in words - Kata C#
+# Numbers in words - Kata C#
 >
 > 1. Create .net solution file
 > `dotnet new sln --name NumbersInWords`
@@ -10,9 +10,9 @@
 > `dotnet sln add NumbersInWords`
 > 
 > 4. Rename the default class file as 'NumbersInWordsExt' as this a string extention.
-> `cd NumbersInWords`
-> `ren Class1.cs NumbersInWordsExt.cs`
-> `cd..`
+> * `cd NumbersInWords`
+> * `ren Class1.cs NumbersInWordsExt.cs`
+> * `cd..`
 > 
 > 5. .gitignore file added to exclude obj folder from class library
 > 6. Add Xunit project
@@ -22,6 +22,10 @@
 > `dotnet sln add NumbersInWords.Tests`
 > 
 > 8. Rename the default test file 
-> `cd NumbersInWords.Tests`
-> `ren UnitTest1.cs NumbersInWordsTest.cs `
-> `cd..`
+> * `cd NumbersInWords.Tests`
+> * `ren UnitTest1.cs NumbersInWordsTest.cs `
+> * `cd..`
+> 
+> 9. Add reference to class library from unit test
+> * `cd NumbersInWords.Tests`
+> * `dotnet add reference ../NumbersInWords`
