@@ -15,4 +15,11 @@ public class NumbersInWordsTest
         long number = 2;
         Assert.Equal("two", number.ToWord());
     }
+
+    [Fact]
+    public void ShouldReturnNumberThreeInWord()
+    {
+        long number = 3;
+        Assert.Equal("three", number.ToWord());
+    }
 }
