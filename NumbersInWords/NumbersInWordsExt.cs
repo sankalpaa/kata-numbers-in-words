@@ -1,6 +1,9 @@
 ﻿namespace NumbersInWords;
 
-public class Class1
+public static class NumberInWordsExt
 {
-
+    public static string ToWord(this long n)
+    {
+        return "one";
+    }
 }
